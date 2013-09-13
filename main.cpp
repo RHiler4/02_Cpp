@@ -72,6 +72,17 @@ void testPrime(){
 
 //TODO: declare and implement "defix" function here
 
+string defix(string dash){
+
+	std::size_t getDash = dash.find_first_of("-");
+	
+	if(getDash.find("-")!=string::npos){
+		return getDash.substr(getDash.find("-")+1);
+	}
+	return dash;
+}
+	
+
 //This is a basic tester for "defix"
 void testDefix(){
   std::string inputs[] = {"re-run","pre--text","-ooh","moo","no-no-no", "foo-"};
