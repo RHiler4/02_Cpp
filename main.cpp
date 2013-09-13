@@ -18,6 +18,26 @@
 
 //TODO: Declare and implement "prime" function here
 
+	bool Prime (int n){ 
+
+	int i;      
+	bool prime; 
+
+		for (i=2; i<=sqrt(n); i++)
+      		{
+          	if (n%i == 0)
+          	{
+                prime = FALSE; 
+          	}
+          	else
+          	{
+                prime=TRUE; 
+          }
+      }
+      return prime; 
+}
+
+
 
 //This is a basic tester for the "prime" function
 void testPrime(){
